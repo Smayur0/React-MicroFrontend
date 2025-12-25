@@ -13,13 +13,18 @@ The monorepo uses **pnpm** for package management.
 ## 🏗 Monorepo Structure
 
 MicroFE-monorepo/
-├─ apps/
-│ ├─ shell/ # Shell app (host)
-│ └─ remote/ # Remote app (microfrontend)
-├─ node_modules/
-├─ pnpm-lock.yaml
-└─ pnpm-workspace.yaml
-
+├── apps/
+│ ├── shell/ # Host application (Module Federation)
+│ │ ├── src/
+│ │ ├── package.json
+│ │ └── vite.config.js
+│ └── remote/ # Microfrontend module
+│ ├── src/
+│ ├── package.json
+│ └── vite.config.js
+├── node_modules/ # Shared dependencies
+├── pnpm-lock.yaml # Lockfile for reproducible installs
+└── pnpm-workspace.yaml # Workspace configuration
 
 ### Key Points:
 
