@@ -1,0 +1,28 @@
+# Node modules
+node_modules/
+**/node_modules/
+
+# pnpm lock file (optional, you can commit pnpm-lock.yaml if you want consistent installs)
+#pnpm-lock.yaml
+
+# Build outputs
+dist/
+**/dist/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+
+# Optional: dotenv
+.env
+**/.env

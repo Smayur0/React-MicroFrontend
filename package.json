@@ -1,0 +1,22 @@
+{
+  "name": "MicroFE-monorepo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "pnpm --parallel --filter shell --filter remote start",
+    "build": "pnpm --parallel --filter shell --filter remote build",
+    "prepare": "husky install"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "workspaces": [
+    "apps/*"
+  ],
+  "packageManager": "pnpm@10.25.0",
+  "devDependencies": {
+    "husky": "^9.1.7"
+  }
+}
